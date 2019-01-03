@@ -12,6 +12,8 @@
 		3E97423E21DB3A4300B5D978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97423C21DB3A4300B5D978 /* Main.storyboard */; };
 		3E97424021DB3A4500B5D978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E97423F21DB3A4500B5D978 /* Assets.xcassets */; };
 		3E97424321DB3A4500B5D978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97424121DB3A4500B5D978 /* LaunchScreen.storyboard */; };
+		3E97424B21DB3AC400B5D978 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97424A21DB3AC400B5D978 /* UIViewExt.swift */; };
+		86071D9E1619DF42003D0C1A /* Pods_MillionDollarAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EC6D55FEC26AD7C69131E8 /* Pods_MillionDollarAppTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		3E97423F21DB3A4500B5D978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E97424221DB3A4500B5D978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E97424421DB3A4500B5D978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E97424A21DB3AC400B5D978 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		58EC6D55FEC26AD7C69131E8 /* Pods_MillionDollarAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionDollarAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EDAA7E557DD910917D48B7 /* Pods-MillionDollarAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionDollarAppTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MillionDollarAppTest/Pods-MillionDollarAppTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1F3B33F07BA259A3C29782 /* Pods-MillionDollarAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionDollarAppTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MillionDollarAppTest/Pods-MillionDollarAppTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86071D9E1619DF42003D0C1A /* Pods_MillionDollarAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3559A33AE97FB3D8C95CDC5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5EDAA7E557DD910917D48B7 /* Pods-MillionDollarAppTest.debug.xcconfig */,
+				AF1F3B33F07BA259A3C29782 /* Pods-MillionDollarAppTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3E97422C21DB3A4300B5D978 = {
 			isa = PBXGroup;
 			children = (
 				3E97423721DB3A4300B5D978 /* MillionDollarAppTest */,
 				3E97423621DB3A4300B5D978 /* Products */,
+				3559A33AE97FB3D8C95CDC5F /* Pods */,
+				B9EC2B5DF4FE90F5FE9182DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				3E97423821DB3A4300B5D978 /* AppDelegate.swift */,
 				3E97423A21DB3A4300B5D978 /* ViewController.swift */,
+				3E97424A21DB3AC400B5D978 /* UIViewExt.swift */,
 				3E97423C21DB3A4300B5D978 /* Main.storyboard */,
 				3E97423F21DB3A4500B5D978 /* Assets.xcassets */,
 				3E97424121DB3A4500B5D978 /* LaunchScreen.storyboard */,
 				3E97424421DB3A4500B5D978 /* Info.plist */,
 			);
 			path = MillionDollarAppTest;
+			sourceTree = "<group>";
+		};
+		B9EC2B5DF4FE90F5FE9182DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58EC6D55FEC26AD7C69131E8 /* Pods_MillionDollarAppTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E97424721DB3A4500B5D978 /* Build configuration list for PBXNativeTarget "MillionDollarAppTest" */;
 			buildPhases = (
+				C28291E3F2609800A5717275 /* [CP] Check Pods Manifest.lock */,
 				3E97423121DB3A4300B5D978 /* Sources */,
 				3E97423221DB3A4300B5D978 /* Frameworks */,
 				3E97423321DB3A4300B5D978 /* Resources */,
+				6409143276C9A83AE64C4695 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6409143276C9A83AE64C4695 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MillionDollarAppTest/Pods-MillionDollarAppTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MillionDollarAppTest/Pods-MillionDollarAppTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28291E3F2609800A5717275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MillionDollarAppTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E97423121DB3A4300B5D978 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +205,7 @@
 			files = (
 				3E97423B21DB3A4300B5D978 /* ViewController.swift in Sources */,
 				3E97423921DB3A4300B5D978 /* AppDelegate.swift in Sources */,
+				3E97424B21DB3AC400B5D978 /* UIViewExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +349,7 @@
 		};
 		3E97424821DB3A4500B5D978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EDAA7E557DD910917D48B7 /* Pods-MillionDollarAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		3E97424921DB3A4500B5D978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1F3B33F07BA259A3C29782 /* Pods-MillionDollarAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
